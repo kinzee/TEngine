@@ -39,7 +39,7 @@ namespace GameLogic
         {
             get
             {
-                var parentUI = base.parent;
+                var parentUI = base._parent;
                 while (parentUI != null)
                 {
                     if (parentUI.Type == UIType.Window)
@@ -55,7 +55,7 @@ namespace GameLogic
         }
         
         /// <summary>
-        /// 窗口可见性
+        /// 窗口可见性。
         /// </summary>
         public bool Visible
         {
@@ -78,15 +78,15 @@ namespace GameLogic
             List<UIWidget> listNextUpdateChild = null;
             if (ListChild != null && ListChild.Count > 0)
             {
-                listNextUpdateChild = ListUpdateChild;
-                var updateListValid = UpdateListValid;
+                listNextUpdateChild = _listUpdateChild;
+                var updateListValid = _updateListValid;
                 List<UIWidget> listChild = null;
                 if (!updateListValid)
                 {
                     if (listNextUpdateChild == null)
                     {
                         listNextUpdateChild = new List<UIWidget>();
-                        ListUpdateChild = listNextUpdateChild;
+                        _listUpdateChild = listNextUpdateChild;
                     }
                     else
                     {
@@ -119,16 +119,16 @@ namespace GameLogic
 
                 if (!updateListValid)
                 {
-                    UpdateListValid = true;
+                    _updateListValid = true;
                 }
             }
 
             bool needUpdate = false;
             if (listNextUpdateChild is not { Count: > 0 })
             {
-                HasOverrideUpdate = true;
+                _hasOverrideUpdate = true;
                 OnUpdate();
-                needUpdate = HasOverrideUpdate;
+                needUpdate = _hasOverrideUpdate;
             }
             else
             {
@@ -206,7 +206,7 @@ namespace GameLogic
             }
 
             RestChildCanvas(parentUI);
-            parent = parentUI;
+            _parent = parentUI;
             Parent.ListChild.Add(this);
             Parent.SetUpdateDirty();
             ScriptGenerator();
@@ -278,7 +278,7 @@ namespace GameLogic
         /// 组件被销毁调用。
         /// <remarks>请勿手动调用！</remarks>
         /// </summary>
-        internal void OnDestroyWidget()
+        protected internal void OnDestroyWidget()
         {
             Parent?.SetUpdateDirty();
             
@@ -301,9 +301,9 @@ namespace GameLogic
         /// </summary>
         public void Destroy()
         {
-            if (parent != null)
+            if (_parent != null)
             {
-                parent.ListChild.Remove(this);
+                _parent.ListChild.Remove(this);
                 OnDestroy();
                 OnDestroyWidget();
             }

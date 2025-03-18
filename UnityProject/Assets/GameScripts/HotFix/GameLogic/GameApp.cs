@@ -2,7 +2,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using GameLogic;
 using TEngine;
-using UnityEngine.Networking;
+#pragma warning disable CS0436
+
 
 /// <summary>
 /// 游戏App。
