@@ -84,6 +84,16 @@ public class GameModule
     public static ILocalizationModule Localization => _localization ??= Get<ILocalizationModule>();
     
     private static ILocalizationModule _localization;
+
+    /// <summary>
+    /// 获取网络模块。
+    /// </summary>
+    public static NetModule Net => _net ??= NetModule.Instance;
+
+    private static NetModule _net;
+    
+    
+    
     #endregion
     
     /// <summary>

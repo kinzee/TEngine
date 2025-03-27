@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/azer/Project/Unity/UniProject/Server/Main/Main.csproj": {}
+  },
+  "projects": {
+    "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj": {
+      "version": "2024.2.24",
+      "restore": {
+        "projectUniqueName": "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj",
+        "projectName": "Fantasy-Net",
+        "projectPath": "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj",
+        "packagesPath": "/Users/azer/.nuget/packages/",
+        "outputPath": "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/azer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IO.Pipelines": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[3.2.45, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/azer/Project/Unity/UniProject/Server/Entity/Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/azer/Project/Unity/UniProject/Server/Entity/Entity.csproj",
+        "projectName": "Entity",
+        "projectPath": "/Users/azer/Project/Unity/UniProject/Server/Entity/Entity.csproj",
+        "packagesPath": "/Users/azer/.nuget/packages/",
+        "outputPath": "/Users/azer/Project/Unity/UniProject/Server/Entity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/azer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj": {
+                "projectPath": "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/azer/Project/Unity/UniProject/Server/Main/Main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/azer/Project/Unity/UniProject/Server/Main/Main.csproj",
+        "projectName": "Main",
+        "projectPath": "/Users/azer/Project/Unity/UniProject/Server/Main/Main.csproj",
+        "packagesPath": "/Users/azer/.nuget/packages/",
+        "outputPath": "/Users/azer/Project/Unity/UniProject/Server/Main/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/azer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj": {
+                "projectPath": "/Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Fantasy.Net.csproj"
+              },
+              "/Users/azer/Project/Unity/UniProject/Server/Entity/Entity.csproj": {
+                "projectPath": "/Users/azer/Project/Unity/UniProject/Server/Entity/Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

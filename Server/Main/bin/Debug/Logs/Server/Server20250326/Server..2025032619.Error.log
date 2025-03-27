@@ -1,0 +1,24 @@
+2025-03-26 19:39:52.2663 (Session.cs:251) System.NotSupportedException: OuterMessageScheduler Received unsupported message protocolCode:0
+1、请检查该协议所在的程序集是否在框架初始化的时候添加到框架中。
+2、如果看到这个消息表示你有可能用的老版本的导出工具，请更换为最新的导出工具。
+ IP地址:127.0.0.1:50549
+   at Fantasy.Scheduler.OuterMessageScheduler.Scheduler(Session session, APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Message/Scheduler/OuterMessageScheduler.cs:line 276
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Network.Session.Receive(APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Session/Session.cs:line 251
+2025-03-26 19:45:19.2047 (Session.cs:251) System.NotSupportedException: OuterMessageScheduler Received unsupported message protocolCode:0
+1、请检查该协议所在的程序集是否在框架初始化的时候添加到框架中。
+2、如果看到这个消息表示你有可能用的老版本的导出工具，请更换为最新的导出工具。
+ IP地址:127.0.0.1:54595
+   at Fantasy.Scheduler.OuterMessageScheduler.Scheduler(Session session, APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Message/Scheduler/OuterMessageScheduler.cs:line 276
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Network.Session.Receive(APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Session/Session.cs:line 251
+2025-03-26 19:49:37.0441 (Session.cs:251) System.NotSupportedException: OuterMessageScheduler Received unsupported message protocolCode:0
+1、请检查该协议所在的程序集是否在框架初始化的时候添加到框架中。
+2、如果看到这个消息表示你有可能用的老版本的导出工具，请更换为最新的导出工具。
+ IP地址:127.0.0.1:57868
+   at Fantasy.Scheduler.OuterMessageScheduler.Scheduler(Session session, APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Message/Scheduler/OuterMessageScheduler.cs:line 276
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Async.FTask.InnerCoroutine() in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/FTask/Task/FTask.cs:line 44
+   at Fantasy.Network.Session.Receive(APackInfo packInfo) in /Users/azer/Project/Unity/UniProject/Fantasy/Fantasy.Net/Fantasy.Net/Runtime/Core/Network/Session/Session.cs:line 251

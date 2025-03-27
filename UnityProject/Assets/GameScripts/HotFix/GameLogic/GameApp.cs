@@ -1,7 +1,10 @@
 using System.Collections.Generic;
 using System.Reflection;
+using Cysharp.Threading.Tasks;
 using GameLogic;
 using TEngine;
+using Log = TEngine.Log;
+
 #pragma warning disable CS0436
 
 
@@ -11,7 +14,6 @@ using TEngine;
 public partial class GameApp
 {
     private static List<Assembly> _hotfixAssembly;
-
     /// <summary>
     /// 热更域App主入口。
     /// </summary>
@@ -28,8 +30,10 @@ public partial class GameApp
     
     private static void StartGameLogic()
     {
+        LoginSystem.Instance.Active();
         GameEvent.Get<ILoginUI>().ShowLoginUI();
-        GameModule.UI.ShowUIAsync<BattleMainUI>();
+        //GameModule.UI.ShowUIAsync<BattleMainUI>();
+        GameModule.Net.Connect("127.0.0.1:20000", false).Forget();
     }
     
     private static void Release()

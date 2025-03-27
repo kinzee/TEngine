@@ -1,0 +1,16 @@
+/Users/azer/Project/Unity/UniProject/Server/Entity/bin/Debug/net8.0/Entity.deps.json
+/Users/azer/Project/Unity/UniProject/Server/Entity/bin/Debug/net8.0/Entity.dll
+/Users/azer/Project/Unity/UniProject/Server/Entity/bin/Debug/net8.0/Entity.pdb
+/Users/azer/Project/Unity/UniProject/Server/Entity/bin/Debug/net8.0/Fantasy-Net.dll
+/Users/azer/Project/Unity/UniProject/Server/Entity/bin/Debug/net8.0/Fantasy-Net.pdb
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.csproj.AssemblyReference.cache
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.AssemblyInfoInputs.cache
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.AssemblyInfo.cs
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.csproj.CoreCompileInputs.cache
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.sourcelink.json
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.csproj.Up2Date
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.dll
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/refint/Entity.dll
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/Entity.pdb
+/Users/azer/Project/Unity/UniProject/Server/Entity/obj/Debug/net8.0/ref/Entity.dll
