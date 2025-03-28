@@ -14,12 +14,13 @@
       "dependencies": {}
     },
     "com.fantasy.unity": {
-      "version": "file:../../Fantasy/Fantasy.Unity/Fantasy.Unity",
+      "version": "https://github.com/qq362946/Fantasy.Unity.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
+      },
+      "hash": "8241ed8c18f42ce9a6061f19cbc64271efa100ad"
     },
     "com.tuyoogame.yooasset": {
       "version": "file:YooAsset",
