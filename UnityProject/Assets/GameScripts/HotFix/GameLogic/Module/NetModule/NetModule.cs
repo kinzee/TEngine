@@ -57,6 +57,11 @@ namespace GameLogic
             await UniTask.WaitUntil(() => _scene != null);
             _session = _scene.Connect(address, NetworkProtocolType.TCP, OnConnectCompleted, OnConnectFailed, OnDisconnect, false, 3000);
         }
+        
+        public void DisConnect()
+        {
+            _session.Dispose();
+        }
 
         public void Send(IMessage message)
         {
@@ -74,6 +79,7 @@ namespace GameLogic
         private void OnConnectFailed()
         {
             Log.Error("连接服务器失败");
+            GameEvent.Get<INetConnectUI>().CloseConnectUI();
         }
 
         private void OnDisconnect()

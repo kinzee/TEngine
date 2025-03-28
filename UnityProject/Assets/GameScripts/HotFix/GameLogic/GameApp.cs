@@ -30,7 +30,6 @@ public partial class GameApp
     
     private static void StartGameLogic()
     {
-        LoginSystem.Instance.Active();
         GameEvent.Get<ILoginUI>().ShowLoginUI();
         //GameModule.UI.ShowUIAsync<BattleMainUI>();
         GameModule.Net.Connect("127.0.0.1:20000", false).Forget();
