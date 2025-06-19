@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="z6zwewj0">
+  <resources>
+    <component id="jk7q0" name="CommonRedDot.xml" path="/" exported="true"/>
+    <image id="jk7q1" name="home_pic_hongdian.png" path="/images/Btns/" exported="true"/>
+    <component id="jk7q2" name="CommonDialog.xml" path="/" exported="true"/>
+    <image id="jk7q3" name="tongyong_btn_anniu1.png" path="/images/Btns/" exported="true" scale="9grid" scale9grid="73,25,133,50"/>
+    <image id="jk7q4" name="tongyong_pic_mengban.png" path="/images/Frames/" exported="true" scale="9grid" scale9grid="25,25,50,50"/>
+    <component id="jk7q5" name="BtnNormal.xml" path="/Buttons/" exported="true"/>
+    <image id="jk7q6" name="tongyong_btn_anniu2.png" path="/images/Btns/" exported="true"/>
+    <component id="jk7q7" name="CommonAvatar.xml" path="/" exported="true"/>
+    <image id="jk7q8" name="home_pic_touxiangkuang.png" path="/images/Frames/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

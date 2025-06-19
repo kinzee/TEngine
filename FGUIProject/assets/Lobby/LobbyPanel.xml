@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="1920,1080"/>
+<component size="1920,1080">
+  <displayList>
+    <graph id="n1_jk7q" name="n1" xy="-2,1" size="1920,1080" type="rect" fillColor="#ff87be6b"/>
+    <text id="n0_jk7q" name="text_panle" xy="826,483" size="268,114" fontSize="88" color="#ffffff" text="主界面"/>
+    <component id="n2_jk7q" name="btn_userInfo" src="jk7q2" fileName="Comps/BtnLobbyModule.xml" xy="240,675">
+      <Button title="个人信息"/>
+    </component>
+    <component id="n3_jk7q" name="btn_setting" src="jk7q2" fileName="Comps/BtnLobbyModule.xml" xy="1356,123">
+      <Button title="设置"/>
+    </component>
+    <component id="n4_jk7q" name="avatar" src="jk7q7" fileName="CommonAvatar.xml" pkg="z6zwewj0" xy="119,71"/>
+  </displayList>
+</component>

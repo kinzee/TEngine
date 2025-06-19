@@ -2,6 +2,8 @@
 <packageDescription id="0ku2w3ya">
   <resources>
     <component id="jmlm0" name="LobbyPanel.xml" path="/"/>
+    <component id="jk7q2" name="BtnLobbyModule.xml" path="/Comps/"/>
+    <image id="jk7q3" name="home_btn_kaishi.png" path="/Images/" scale="9grid" scale9grid="53,46,43,46"/>
   </resources>
   <publish name=""/>
 </packageDescription>

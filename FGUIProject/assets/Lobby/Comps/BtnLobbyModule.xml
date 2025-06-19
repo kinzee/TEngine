@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="424,250" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_jk7q" name="icon" xy="0,0" size="424,250" url="ui://0ku2w3yajk7q3" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3_jk7q" name="title" xy="36,64" size="343,106" fontSize="57" align="center" vAlign="middle" autoSize="none" singleLine="true" text="按钮">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n5_jk7q" name="redDot" src="jk7q0" fileName="CommonRedDot.xml" pkg="z6zwewj0" xy="369,4" controller="show,0"/>
+  </displayList>
+  <Button/>
+</component>

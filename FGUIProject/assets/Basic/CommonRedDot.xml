@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,50">
+  <controller name="show" exported="true" pages="0,false,1,true" selected="0"/>
+  <displayList>
+    <image id="n0_jk7q" name="n0" src="jk7q1" fileName="images/home_pic_hongdian.png" xy="0,0">
+      <gearDisplay controller="show" pages="1"/>
+    </image>
+  </displayList>
+</component>

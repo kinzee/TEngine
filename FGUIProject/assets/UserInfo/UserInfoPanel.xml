@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="784,871">
+  <displayList>
+    <image id="n0_jk7q" name="n0" src="jk7q4" fileName="images/Frames/tongyong_pic_mengban.png" pkg="z6zwewj0" xy="0,0" size="784,871"/>
+    <component id="n1_jk7q" name="n1" src="jk7q7" fileName="CommonAvatar.xml" pkg="z6zwewj0" xy="169,68"/>
+    <component id="n2_jk7q" name="btn_back" src="jk7q5" fileName="Buttons/BtnNormal.xml" pkg="z6zwewj0" xy="246,651">
+      <Button title="返回"/>
+    </component>
+  </displayList>
+</component>

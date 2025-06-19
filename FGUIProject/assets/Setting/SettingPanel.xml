@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <displayList>
+    <graph id="n0_jk7q" name="n0" xy="0,0" size="1920,1080" type="rect" fillColor="#ffdda3c1"/>
+    <component id="n1_jk7q" name="btn_back" src="jk7q5" fileName="Buttons/BtnNormal.xml" pkg="z6zwewj0" xy="786,627">
+      <Button title="返回"/>
+    </component>
+  </displayList>
+</component>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="03b1etil">
-  <resources/>
+  <resources>
+    <component id="jk7q0" name="UserInfoPanel.xml" path="/"/>
+  </resources>
+  <publish name=""/>
 </packageDescription>

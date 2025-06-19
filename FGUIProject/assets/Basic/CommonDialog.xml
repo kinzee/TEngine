@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="981,618">
+  <displayList>
+    <image id="n1_jk7q" name="n1" src="jk7q4" fileName="images/Frames/tongyong_pic_mengban.png" xy="1,2" size="980,616"/>
+    <text id="n3_jk7q" name="text_title" xy="432,28" size="116,74" fontSize="56" color="#ffffff" text="提示"/>
+    <component id="n4_jk7q" name="btn_cancel" src="jk7q5" fileName="Buttons/BtnNormal.xml" xy="127,460">
+      <Button title="取消"/>
+    </component>
+    <component id="n5_jk7q" name="btn_confirm" src="jk7q5" fileName="Buttons/BtnNormal.xml" xy="588,464" controller="type,1">
+      <Button title="确认"/>
+    </component>
+    <text id="n6_jk7q" name="n6" xy="157,213" size="666,158" fontSize="30" color="#ffffff" autoSize="none" autoClearText="true" text="11111"/>
+  </displayList>
+</component>

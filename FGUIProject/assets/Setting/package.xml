@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="09wlhnpt">
-  <resources/>
+  <resources>
+    <component id="jk7q0" name="SettingPanel.xml" path="/"/>
+  </resources>
+  <publish name=""/>
 </packageDescription>

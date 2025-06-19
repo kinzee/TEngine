@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="292,103" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="type" exported="true" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n4_jk7q" name="n4" src="jk7q3" fileName="images/Btns/tongyong_btn_anniu1.png" xy="0,0">
+      <gearDisplay controller="type" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_jk7q" name="n5" src="jk7q6" fileName="images/Btns/tongyong_btn_anniu2.png" xy="0,0">
+      <gearDisplay controller="type" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_jk7q" name="title" xy="0,0" size="292,87" fontSize="46" color="#993300" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="按钮">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>
