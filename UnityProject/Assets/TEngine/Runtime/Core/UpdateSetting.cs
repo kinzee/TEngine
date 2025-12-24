@@ -36,7 +36,17 @@ namespace TEngine
         /// </summary>
         NoNotice = 2,
     }
-
+    /// <summary>
+    /// WebGL平台下，
+    /// StreamingAssets：跳过远程下载资源直接访问StreamingAssets
+    /// Remote：访问远程资源
+    /// </summary>
+    public enum LoadResWayWebGL
+    {
+        Remote,
+        StreamingAssets,
+    }
+    
     [CreateAssetMenu(menuName = "TEngine/UpdateSetting", fileName = "UpdateSetting")]
     public class UpdateSetting : ScriptableObject
     {
@@ -62,7 +72,7 @@ namespace TEngine
         public List<string> HotUpdateAssemblies = new List<string>() {"GameProto.dll", "GameLogic.dll" };
 
         [Header("Need manual setting!")]
-        public List<string> AOTMetaAssemblies = new List<string>() { "mscorlib.dll", "System.dll", "System.Core.dll", "TEngine.Runtime.dll" };
+        public List<string> AOTMetaAssemblies = new List<string>() { "mscorlib.dll", "System.dll", "System.Core.dll", "TEngine.Runtime.dll" ,"UniTask.dll", "YooAsset.dll"};
 
         /// <summary>
         /// Dll of main business logic assembly
@@ -96,6 +106,61 @@ namespace TEngine
         [SerializeField]
         private string FallbackResDownLoadPath = "http://127.0.0.1:8082";
 
+        /// <summary>
+        /// WebGL平台加载本地资源/加载远程资源。
+        /// </summary>
+        [Header("WebGL设置")]
+        [SerializeField]
+        private LoadResWayWebGL LoadResWayWebGL = LoadResWayWebGL.Remote;
+        /// <summary>
+        /// 是否自动你讲打包资源复制到打包后的StreamingAssets地址
+        /// </summary>
+        [Header("构建资源设置")]
+        [SerializeField]
+        private bool isAutoAssetCopeToBuildAddress = false;
+        /// <summary>
+        /// 打包程序资源地址
+        /// </summary>
+        [SerializeField]
+        private string BuildAddress = "../../Builds/Unity_Data/StreamingAssets";
+        /// <summary>
+        /// 是否使用可寻址资源代替资源路径
+        /// 说明：开启此项可以节省运行时清单占用的内存！
+        /// </summary>
+        [SerializeField, Tooltip("是否使用可寻址资源代替资源路径 说明：开启此项可以节省运行时清单占用的内存！")]
+        private bool ReplaceAssetPathWithAddress = false;
+        /// <summary>
+        /// 是否自动你讲打包资源复制到打包后的StreamingAssets地址
+        /// </summary>
+        /// <returns></returns>
+        public bool IsAutoAssetCopeToBuildAddress()
+        {
+            return isAutoAssetCopeToBuildAddress;
+        }
+        /// <summary>
+        /// 获取打包程序资源地址
+        /// </summary>
+        /// <returns></returns>
+        public string GetBuildAddress()
+        {
+            return BuildAddress;
+        }
+
+        /// <summary>
+        /// 获取是否使用可寻址资源代替资源路径
+        /// </summary>
+        /// <returns></returns>
+        public bool GetReplaceAssetPathWithAddress()
+            => ReplaceAssetPathWithAddress;
+        
+        /// <summary>
+        /// 是否加载远程资源
+        /// </summary>
+        /// <returns></returns>
+        public LoadResWayWebGL GetLoadResWayWebGL()
+        {
+            return LoadResWayWebGL;
+        }
         /// <summary>
         /// 获取资源下载路径。
         /// </summary>

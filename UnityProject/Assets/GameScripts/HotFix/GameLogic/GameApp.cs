@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using Cysharp.Threading.Tasks;
 using GameLogic;
+#if ENABLE_OBFUZ
+using Obfuz;
+#endif
 using TEngine;
 using Log = TEngine.Log;
 
@@ -11,6 +14,9 @@ using Log = TEngine.Log;
 /// <summary>
 /// 游戏App。
 /// </summary>
+#if ENABLE_OBFUZ
+[ObfuzIgnore(ObfuzScope.TypeName | ObfuzScope.MethodName)]
+#endif
 public partial class GameApp
 {
     private static List<Assembly> _hotfixAssembly;
@@ -24,17 +30,18 @@ public partial class GameApp
         _hotfixAssembly = (List<Assembly>)objects[0];
         Log.Warning("======= 看到此条日志代表你成功运行了热更新代码 =======");
         Log.Warning("======= Entrance GameApp =======");
-        ModuleSystem.GetModule<IUpdateDriver>().AddDestroyListener(Release);
+        Utility.Unity.AddDestroyListener(Release);
+        Log.Warning("======= StartGameLogic =======");
         StartGameLogic();
     }
-    
+
     private static void StartGameLogic()
     {
         GameEvent.Get<ILoginUI>().ShowLoginUI();
         //GameModule.UI.ShowUIAsync<BattleMainUI>();
         GameModule.Net.Connect("127.0.0.1:20000", false).Forget();
     }
-    
+
     private static void Release()
     {
         SingletonSystem.Release();
